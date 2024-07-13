@@ -1,0 +1,35 @@
+#root {
+  margin-right: auto;
+  margin-left: auto;
+  align-content: center;
+  text-align: center;
+}
+
+.game-field-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height to center vertically */
+}
+
+.game-field-row {
+  display: flex;
+}
+
+.cell {
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.alive {
+  background-color: #000000;
+}
+
+.dead {
+  background-color: #8f8f8f;
+}
