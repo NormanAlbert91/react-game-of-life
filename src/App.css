@@ -17,8 +17,8 @@
 }
 
 .cell {
-  width: 1em;
-  height: 1em;
+  width: 0.5em;
+  height: 0.5em;
   text-align: center;
   border: 1px solid black;
   border-radius: 0;

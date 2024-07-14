@@ -4,8 +4,8 @@ import GameLoop from './GameLoop';
 
 function App() {
 
-    const [rows, setRows] = useState<number>(40);
-    const [cols, setCols] = useState<number>(75);
+    const [rows, setRows] = useState<number>(70);
+    const [cols, setCols] = useState<number>(125);
     const [maxFps, setMaxFps] = useState<number>(10);
     const handleRowsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setRows(Number(e.target.value));
@@ -33,11 +33,11 @@ function App() {
                 Max FPS:
                 <input type="number" value={maxFps} onChange={handleMaxFpsChange} />
             </label>
-            <div className="game-field-container">
+            <div>
                 <GameLoop rows={rows} cols={cols} maxFps={maxFps} />
             </div>
         </div>
     );
-};
+}
 
 export default App;
